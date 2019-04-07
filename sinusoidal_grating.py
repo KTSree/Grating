@@ -45,5 +45,12 @@ def sinusoidal_grating(theta,k,phi):
     return sin_grating
 
 
+# Plotting the grating
 
+S=sinusoidal_grating(0,np.pi,0)
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.title("Sinusoidal grating for orientation=0, spatial frquency=pi and phase=0", fontsize=8)
+plt.imshow(S, cmap='gray')
+plt.show()
 
