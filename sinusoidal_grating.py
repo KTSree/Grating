@@ -38,7 +38,8 @@ def grid_generation():
 
 def sinusoidal_grating(theta,k,phi):
     '''Function to compute sinusoidal grating with arguments theta(orientation),
-       k(spatial x,y=grid_generation() #generating [x,y] grid '''
+       k , A, phi '''
+    x,y=grid_generation() #generating [x,y] grid
     A=1 #Amplitude
     sin_grating=A*np.cos(k*x*np.cos(theta)+k*y*np.sin(theta)-phi)
     return sin_grating
